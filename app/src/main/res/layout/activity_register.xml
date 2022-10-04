@@ -36,13 +36,15 @@
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
-            <ImageView
-                android:id="@+id/imageView"
+            <ImageButton
+                android:id="@+id/imagetambah"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
                 app:layout_constraintBottom_toBottomOf="@+id/image_profile"
                 app:layout_constraintEnd_toEndOf="@+id/image_profile"
-                app:srcCompat="@drawable/edit_icon"
+                android:src="@drawable/edit_icon"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -130,7 +132,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layout_homepage"
+                android:id="@+id/layout_website"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -142,10 +144,10 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/text_homepage"
+                    android:id="@+id/text_website"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Homepage"
+                    android:hint="Website (ex : www.google.com)"
                     android:inputType=""
                     />
 
@@ -159,15 +161,15 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layout_homepage"
+                app:layout_constraintTop_toBottomOf="@+id/layout_website"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/text_about"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:gravity="top"
-                    android:hint="About You"
+                    android:hint="About Me"
                     android:inputType="textMultiLine"
                     />
 
